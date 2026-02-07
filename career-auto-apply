@@ -27,14 +27,14 @@ print("signup successfully")
 email_box=WebDriverWait(driver,10).until(
     EC.presence_of_element_located((By.ID,"email-or-phone") )
 )
-email_box.send_keys("lubnabatul02@gmail.com")
+email_box.send_keys("lubnabatul02@gmail.com" or "9551373004")
 human_delay()
 
 
 password=WebDriverWait(driver,10).until(
     EC.presence_of_element_located((By.ID,"password") )
 )
-password.send_keys("2qvyrdzuu")
+password.send_keys("2222luu")
 human_delay()
 
 
@@ -62,7 +62,7 @@ human_delay()
 
 time.sleep(10)
 submit=WebDriverWait(driver,10).until(
-    EC.element_to_be_clickable((By.NAME,"Continue"))
+    EC.element_to_be_clickable((By.ID,"join-form-submit"))
 )
 submit.click()
 human_delay()
