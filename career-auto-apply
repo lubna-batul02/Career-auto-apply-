@@ -30,8 +30,25 @@ email_box.send_keys("lubnabatul02@gmail.com")
 password=WebDriverWait(driver,10).until(
     EC.presence_of_element_located((By.ID,"password") )
 )
-password.send_keys("2222luubb")
+password.send_keys("2qvyrdzuu")
 
+signup_button=WebDriverWait(driver,10).until(
+    EC.presence_of_element_located((By.ID,"join-form-submit"))
+)
+signup_button.click()
+
+
+
+#next module- filling name
+first_name=WebDriverWait(driver,10).until(
+    EC.presence_of_element_located((By.ID,"first-name"))
+)
+first_name.send_keys("Lubna")
+
+last_name=WebDriverWait(driver,10).until(
+    EC.presence_of_element_located((By.ID,"last-name"))
+)
+last_name.send_keys("Batul")
 print("filled successfully")
-
+time.sleep(30)
 
